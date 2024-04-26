@@ -1,5 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import 'base';
+@import 'variable';
+
+ .article-cont {
+    width: 100%;
+    position: relative;
+    padding: 2em;
+    .header-section {
+        display: flex;
+        margin-top: -5em;
+        width: 100%;
+        justify-content: center;
+        h1 {
+            background-color: white;
+            width: fit-content;
+            padding: .5em;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+    }
+
+    .article-sections {
+        font-family: "Poppins", sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        section {
+            padding: 0 1em;
+            a {
+                text-decoration: none;
+                color: black;
+                display: block;
+                margin-bottom: 1em;
+                padding-bottom: 1em;
+                img {
+                    width: 100%;
+                }.sub-title {
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    color: $secTemp;
+                    font-size: 14px;
+                    font-weight: 600;
+                }h3 {
+                    font-weight: 500;
+                    margin: 0;
+                }.author {
+                    color: $secondary;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .article-mid{
+            a {
+                text-align: center;
+                h3 {
+                    font-size: 42px;
+                    font-weight: 400;
+                    line-height: 45px;
+                    margin: 15px 0;
+                    font-family: 'times new roman';
+                }
+            }
+        }
+
+        .article-right {
+            a {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                .article-mention {
+                    padding-right: 1em;
+                }
+            }
+            .form-submit {
+                font-weight: 600;
+
+                .form-inputs {
+                    margin: 1em 0;
+                    display: block;
+                    input {
+                        padding: 1em;
+                        width: 65%;
+                    } button {
+                        padding: 1em;
+                        color: white;
+                        background-color: $primary;
+                        border: none;
+                    }
+                } .form-ps {
+                    color: $secondary;
+                    span {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+} .article-cont::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 3.5em;
+    border-left: 2px solid black;
+} .article-cont::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 3.5em;
+    border-left: 2px solid black;
 }
+

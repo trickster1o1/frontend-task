@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    max-width: 100%;
+} .cont {
+    padding: 2em 5em;
+    min-height: 100vh;
+}
+@for $i from 1 through 9 {
+    .border-dark-#{$i} {
+        border: 2px solid mix(black, white, $i * 10);
+    }
+}
+
+@for $i from 1 through 9 {
+    .border-top-dark-#{$i} {
+        border-top: 2px solid mix(black, white, $i * 10);
+    }
+}
+
+@for $i from 1 through 9 {
+    .border-left-dark-#{$i} {
+        border-left: 2px solid mix(black, white, $i * 10);
+    }
+}
+
+@for $i from 1 through 9 {
+    .border-right-dark-#{$i} {
+        border-right: 2px solid mix(black, white, $i * 10);
+    }
+}
+
+@for $i from 1 through 9 {
+    .border-bottom-dark-#{$i} {
+        border-bottom: 2px solid mix(black, white, $i * 10);
+    }
+}
